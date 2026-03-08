@@ -17,6 +17,58 @@ Track workouts, calories, body metrics, and get personalised ML-based prediction
 
 ---
 
+## 🗺️ App Flowchart
+
+```mermaid
+flowchart TD
+    A([👤 User Opens App]) --> B[Setup Profile\nName · Age · Weight · Goal]
+    B --> C{Choose Page}
+
+    C --> D[🏠 Dashboard\nLive KPIs · Heatmap · Insights]
+    C --> E[⚖️ Health Metrics\nBMI · Fitness Score · Health Age]
+    C --> F[🏋️ Workout Tracker\nLog · Streaks · PRs · Planner]
+    C --> G[🍽️ Calorie Tracker\nLog Meals · Macros · Patterns]
+    C --> H[🧬 Body Intelligence\nTrends · Projections · Consistency]
+    C --> I[🔮 Predictions & AI\nML Forecast · What-If Scenarios]
+    C --> J[💬 AI Coach\nChatbot · Personalised Advice]
+
+    D --> K[(🗄️ SQLite Database\nweight_log · workout_log · calorie_log)]
+    E --> K
+    F --> K
+    G --> K
+
+    K --> L[📊 Data Analysis Engine\nTrend · Frequency · Calorie Analysis]
+    L --> H
+
+    K --> M[🤖 ML Models\nRidge Regression · Gradient Boosting]
+    M --> I
+
+    K --> N[💡 Recommendation Engine\nRule-Based · Priority Ranked]
+    N --> J
+
+    I --> O([✅ Personalised Insights\nGoal Tracking · Progress · Actions])
+    H --> O
+    J --> O
+
+    style A fill:#6366F1,color:#fff,stroke:none
+    style O fill:#10B981,color:#fff,stroke:none
+    style K fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style M fill:#7C3AED,color:#fff,stroke:none
+    style N fill:#0F172A,color:#E2E8F0,stroke:#6366F1
+    style L fill:#0F172A,color:#E2E8F0,stroke:#6366F1
+    style B fill:#334155,color:#E2E8F0,stroke:none
+    style C fill:#334155,color:#E2E8F0,stroke:none
+    style D fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style E fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style F fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style G fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style H fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style I fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+    style J fill:#1E293B,color:#E2E8F0,stroke:#6366F1
+```
+
+---
+
 ## ✨ Features
 
 ### 🏠 Dashboard
@@ -127,8 +179,8 @@ ai-fitness-coach/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-fitness-coach.git
-cd ai-fitness-coach
+git clone https://github.com/OmPatil2806/AI-Fitness-Coach.git
+cd AI-Fitness-Coach
 ```
 
 ### 2. Create virtual environment
@@ -180,7 +232,7 @@ Open **http://localhost:8501** in your browser 🎉
 
 ## 🗺️ Roadmap
 
-- [ ] 🤖 AI chatbot integration
+- [ ] 🤖 Claude AI chatbot integration
 - [ ] 📄 Monthly PDF progress report export
 - [ ] 🔍 Food search database (Open Food Facts API)
 - [ ] 🏆 Achievement badges & XP system
@@ -193,5 +245,16 @@ Open **http://localhost:8501** in your browser 🎉
 
 ---
 
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**⭐ If you found this useful, please star the repository! ⭐**
+
+[🚀 Live Demo](https://ai-fitness-coach-hecmm6xp8tjvtqt83ihwtg.streamlit.app/) · [🐛 Report Bug](https://github.com/OmPatil2806/AI-Fitness-Coach/issues) · [✨ Request Feature](https://github.com/OmPatil2806/AI-Fitness-Coach/issues)
 
 </div>
